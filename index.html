@@ -48,6 +48,55 @@
         </use>
     </svg>
 </button>
+<form action-method="get" name="signup_form" autocomplete="on">
+    <p class="form-text">Leave your contacts and we will call you back</p>
+    <div class="form-group"> 
+        <label> <span>Name</span></label>
+        <label>
+            <svg class="add-icon">
+                <use href="./images/symbol-defs.svg#icon-person-black">
+                </use>
+            </svg>
+        </label>
+    <input type="text" id="name" name="name" required>
+</div>
+<div class="form-group"> 
+    <label> <span>Phone</span></label>
+    <label>
+        <svg class="add-icon">
+            <use href="./images/symbol-defs.svg#icon-phone-black">
+            </use>
+        </svg>
+    </label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+</div>
+<div class="form-group"> 
+    <label> <span>Email</span></label>
+    <label>
+        <svg class="add-icon">
+            <use href="./images/symbol-defs.svg#icon-email-black">
+            </use>
+        </svg>
+    </label>
+    <input type="email" id="email" name="email" required>
+</div>
+<div class="form-comm">
+<label class="add-comm">
+     <span>Comment</span>
+    </label>
+    <textarea name="comment" rows="10" placeholder="Text input"></textarea>
+</div>
+    <div class="form-check">
+<label>
+    <svg class="checkbox-icon">
+        <use href="./images/symbol-defs.svg#icon-Checkbox">
+        </use>
+    </svg>
+</label>
+    <label for="agree" class="rules">I accept the terms and conditions of the <a href="index.html">Privacy Policy</a> </label>
+</div>
+    <button type="submit" class="button-send">Send</button>
+</form>
 </div>
 </div>
     </section>
@@ -335,6 +384,19 @@
     </a>
     </div>
 </div>
+<form class="subscription-form" action-method="get" name="signup_form" autocomplete="on">
+    <span>Subscribe</span>
+    <div class="subscription">
+<label>
+    <input class="subscribe-text" type="email" name="email" placeholder="E-mail" required>
+</label>
+<button type="submit">Subscribe
+    <svg>
+        <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
+    </svg>
+</button>
+    </div>
+</form>
 </div>
     </div>
 </footer>
